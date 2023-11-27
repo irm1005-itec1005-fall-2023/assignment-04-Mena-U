@@ -41,7 +41,28 @@
   -->
 
   <main>
-    <div id="app"></div>
+    <div id="app">
+      <section class="form-example">
+        <h2>Enter your To do</h2>
+        <form id="form-todoEntry">
+          <label for="todo-input-1">To Do Description:</label>
+          <input type="text" id="todo-input-1" name="todo-input-1" autocomplete="name" required/>
+          <button class="btn-primary" type="submit">Submit To Do Item</button>
+        </form>
+      </section>
+      <section class="form-results">
+        <h2>To Do List:</h2>
+        <ul class="todo-list" id="todo-item-list"></ul>
+        <p id="todo-item-count">To Do Item count</p>
+      </section>
+      <section class="clear-all">
+        <h2>Click here to clear all done todos</h2>
+        <button id="clear-btn">
+          <img class="png-img" src="images/logo.png" alt="logo" />
+         </button>
+      </section>
+      <p>Paragraph entry</p>
+    </div>
   </main>
 
   <!-- Add JavaScript File -->
